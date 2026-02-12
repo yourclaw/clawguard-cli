@@ -90,7 +90,6 @@ ClawGuard Doctor
 
   gitleaks    ✓ installed
   semgrep     ✓ installed
-  snyk        ✗ not found
   mcp-scan    ✗ not found
   npm         ✓ installed
 ```
@@ -173,6 +172,21 @@ make build      # tsup build
 make test       # run the demo scan
 make lint       # biome check
 make clean      # remove dist/ and node_modules/
+```
+
+---
+
+## Contributing
+
+See the main [CONTRIBUTING.md](https://github.com/yourclaw/clawguard/blob/main/CONTRIBUTING.md)
+for guidelines. To work on the CLI specifically:
+
+```bash
+git clone https://github.com/yourclaw/clawguard.git && cd clawguard
+make bootstrap    # sets up all repos
+cd ../clawguard-cli
+# make changes...
+npm run build && node bin/clawguard.js scan ../clawguard-rules/test-fixtures/malicious/data-exfiltration-skill --builtin-only --skip-ai
 ```
 
 ---

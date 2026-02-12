@@ -54,12 +54,6 @@ export async function runDoctor(): Promise<void> {
 			"pip install semgrep",
 		),
 		checkTool(
-			"snyk",
-			"SCA + SAST scanning",
-			["--version"],
-			"npm install -g snyk && snyk auth",
-		),
-		checkTool(
 			"mcp-scan",
 			"MCP server scanning",
 			["--version"],
