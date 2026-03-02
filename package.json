@@ -1,6 +1,6 @@
 {
   "name": "@yourclaw/clawguard-cli",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Scan AI agent skills for security vulnerabilities",
   "bin": {
     "clawguard": "bin/clawguard.js"
